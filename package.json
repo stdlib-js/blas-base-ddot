@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/blas-base-ddot",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Calculate the dot product of two double-precision floating-point vectors.",
   "license": "Apache-2.0",
   "author": {
@@ -15,7 +15,7 @@
   ],
   "main": "./lib",
   "browser": "./lib/main.js",
-  "gypfile": true,
+  "gypfile": false,
   "directories": {
     "benchmark": "./benchmark",
     "doc": "./docs",
