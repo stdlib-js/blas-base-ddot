@@ -43,7 +43,8 @@
   "dependencies": {
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.x",
     "@stdlib/utils-library-manifest": "^0.0.x",
-    "@stdlib/utils-try-require": "^0.0.x"
+    "@stdlib/utils-try-require": "^0.0.x",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.x"
   },
   "devDependencies": {
     "@stdlib/array-float64": "^0.0.x",
