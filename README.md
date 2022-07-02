@@ -70,7 +70,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.ddot;
+})();
 })();
 </script>
 ```
@@ -199,6 +201,7 @@ var z = ddot.ndarray( N, x, 2, 1, y, -1, y.length-1 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ddot@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var x;
 var y;
@@ -216,6 +219,7 @@ console.log( y );
 var z = ddot( x.length, x, 1, y, -1 );
 console.log( z );
 
+})();
 })();
 </script>
 </body>
@@ -319,21 +323,21 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [ddot]: http://www.netlib.org/lapack/explore-html/de/da4/group__double__blas__level1.html
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/umd
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/umd/tree/umd
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 <!-- <related-links> -->
 
-[@stdlib/blas/base/dsdot]: https://github.com/stdlib-js/blas-base-dsdot/tree/umd
+[@stdlib/blas/base/dsdot]: https://github.com/stdlib-js/blas-base-dsdot/tree/umd/tree/umd
 
-[@stdlib/blas/base/gdot]: https://github.com/stdlib-js/blas-base-gdot/tree/umd
+[@stdlib/blas/base/gdot]: https://github.com/stdlib-js/blas-base-gdot/tree/umd/tree/umd
 
-[@stdlib/blas/base/sdot]: https://github.com/stdlib-js/blas-base-sdot/tree/umd
+[@stdlib/blas/base/sdot]: https://github.com/stdlib-js/blas-base-sdot/tree/umd/tree/umd
 
-[@stdlib/blas/base/sdsdot]: https://github.com/stdlib-js/blas-base-sdsdot/tree/umd
+[@stdlib/blas/base/sdsdot]: https://github.com/stdlib-js/blas-base-sdsdot/tree/umd/tree/umd
 
-[@stdlib/blas/ddot]: https://github.com/stdlib-js/blas-ddot/tree/umd
+[@stdlib/blas/ddot]: https://github.com/stdlib-js/blas-ddot/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
