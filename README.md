@@ -48,7 +48,7 @@ The [dot product][dot-product] (or scalar product) is defined as
 ## Usage
 
 ```javascript
-import ddot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ddot@deno/mod.js';
+import ddot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ddot@v0.0.9-deno/mod.js';
 ```
 
 #### ddot( N, x, strideX, y, strideY )
@@ -169,7 +169,7 @@ var z = ddot.ndarray( N, x, 2, 1, y, -1, y.length-1 );
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import ddot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ddot@deno/mod.js';
+import ddot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ddot@v0.0.9-deno/mod.js';
 
 var x;
 var y;
