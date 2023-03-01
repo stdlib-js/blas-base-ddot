@@ -44,7 +44,8 @@
     "@stdlib/assert-is-error": "^0.0.8",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.7",
     "@stdlib/utils-library-manifest": "^0.0.8",
-    "@stdlib/utils-try-require": "^0.0.7"
+    "@stdlib/utils-try-require": "^0.0.7",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.2"
   },
   "devDependencies": {
     "@stdlib/array-float64": "^0.0.6",
