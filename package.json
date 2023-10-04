@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/blas-base-ddot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Calculate the dot product of two double-precision floating-point vectors.",
   "license": "Apache-2.0",
   "author": {
@@ -41,10 +41,10 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-error": "^0.1.0",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.0",
-    "@stdlib/utils-library-manifest": "^0.1.0",
-    "@stdlib/utils-try-require": "^0.1.0"
+    "@stdlib/assert-is-error": "^0.1.1",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.1",
+    "@stdlib/utils-library-manifest": "^0.1.1",
+    "@stdlib/utils-try-require": "^0.1.1"
   },
   "devDependencies": {
     "@stdlib/array-float64": "^0.1.0",
