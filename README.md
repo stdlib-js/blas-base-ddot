@@ -56,14 +56,30 @@ The [dot product][dot-product] (or scalar product) is defined as
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-base-ddot
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ddot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ddot@deno/mod.js';
+var ddot = require( '@stdlib/blas-base-ddot' );
 ```
 
 #### ddot( N, x, strideX, y, strideY )
@@ -71,7 +87,7 @@ import ddot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ddot@deno/mod.
 Calculates the dot product of vectors `x` and `y`.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
 var y = new Float64Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
@@ -88,18 +104,15 @@ The function has the following parameters:
 -   **y**: input [`Float64Array`][@stdlib/array/float64].
 -   **strideY**: index increment for `y`.
 
-The `N` and `stride` parameters determine which elements in `x` and `y` are accessed at runtime. For example, to calculate the dot product of every other value in `x` and the first `N` elements of `y` in reverse order,
+The `N` and strides parameters determine which elements in the strided arrays are accessed at runtime. For example, to calculate the dot product of every other value in `x` and the first `N` elements of `y` in reverse order,
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Float64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
 
-var N = floor( x.length / 2 );
-
-var z = ddot( N, x, 2, y, -1 );
+var z = ddot( 3, x, 2, y, -1 );
 // returns 9.0
 ```
 
@@ -108,8 +121,7 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 <!-- eslint-disable stdlib/capitalized-comments -->
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
 
 // Initial arrays...
 var x0 = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -119,9 +131,7 @@ var y0 = new Float64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 var x1 = new Float64Array( x0.buffer, x0.BYTES_PER_ELEMENT*1 ); // start at 2nd element
 var y1 = new Float64Array( y0.buffer, y0.BYTES_PER_ELEMENT*3 ); // start at 4th element
 
-var N = floor( x0.length / 2 );
-
-var z = ddot( N, x1, -2, y1, 1 );
+var z = ddot( 3, x1, -2, y1, 1 );
 // returns 128.0
 ```
 
@@ -130,7 +140,7 @@ var z = ddot( N, x1, -2, y1, 1 );
 Calculates the dot product of `x` and `y` using alternative indexing semantics.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 4.0, 2.0, -3.0, 5.0, -1.0 ] );
 var y = new Float64Array( [ 2.0, 6.0, -1.0, -4.0, 8.0 ] );
@@ -144,18 +154,15 @@ The function has the following additional parameters:
 -   **offsetX**: starting index for `x`.
 -   **offsetY**: starting index for `y`.
 
-While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying `buffer`, the `offsetX` and `offsetY` parameters support indexing semantics based on starting indices. For example, to calculate the dot product of every other value in `x` starting from the second value with the last 3 elements in `y` in reverse order
+While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameters support indexing semantics based on starting indices. For example, to calculate the dot product of every other value in `x` starting from the second value with the last 3 elements in `y` in reverse order
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 var y = new Float64Array( [ 7.0, 8.0, 9.0, 10.0, 11.0, 12.0 ] );
 
-var N = floor( x.length / 2 );
-
-var z = ddot.ndarray( N, x, 2, 1, y, -1, y.length-1 );
+var z = ddot.ndarray( 3, x, 2, 1, y, -1, y.length-1 );
 // returns 128.0
 ```
 
@@ -181,26 +188,18 @@ var z = ddot.ndarray( N, x, 2, 1, y, -1, y.length-1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import ddot from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-ddot@deno/mod.js';
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
+var filledarrayBy = require( '@stdlib/array-filled-by' );
+var ddot = require( '@stdlib/blas-base-ddot' );
 
-var x;
-var y;
-var i;
-
-x = new Float64Array( 10 );
-y = new Float64Array( 10 );
-for ( i = 0; i < x.length; i++ ) {
-    x[ i ] = round( randu() * 100.0 );
-    y[ i ] = round( randu() * 10.0 );
-}
+var x = filledarrayBy( 10, 'float64', discreteUniform( 0, 100 ) );
 console.log( x );
+
+var y = filledarrayBy( x.length, 'float64', discreteUniform( 0, 10 ) );
 console.log( y );
 
-var z = ddot( x.length, x, 1, y, -1 );
-console.log( z );
+var out = ddot.ndarray( x.length, x, 1, 0, y, -1, y.length-1 );
+console.log( out );
 ```
 
 </section>
@@ -234,7 +233,7 @@ console.log( z );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -300,21 +299,21 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [ddot]: http://www.netlib.org/lapack/explore-html/de/da4/group__double__blas__level1.html
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/deno
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 <!-- <related-links> -->
 
-[@stdlib/blas/base/dsdot]: https://github.com/stdlib-js/blas-base-dsdot/tree/deno
+[@stdlib/blas/base/dsdot]: https://github.com/stdlib-js/blas-base-dsdot
 
-[@stdlib/blas/base/gdot]: https://github.com/stdlib-js/blas-base-gdot/tree/deno
+[@stdlib/blas/base/gdot]: https://github.com/stdlib-js/blas-base-gdot
 
-[@stdlib/blas/base/sdot]: https://github.com/stdlib-js/blas-base-sdot/tree/deno
+[@stdlib/blas/base/sdot]: https://github.com/stdlib-js/blas-base-sdot
 
-[@stdlib/blas/base/sdsdot]: https://github.com/stdlib-js/blas-base-sdsdot/tree/deno
+[@stdlib/blas/base/sdsdot]: https://github.com/stdlib-js/blas-base-sdsdot
 
-[@stdlib/blas/ddot]: https://github.com/stdlib-js/blas-ddot/tree/deno
+[@stdlib/blas/ddot]: https://github.com/stdlib-js/blas-ddot
 
 <!-- </related-links> -->
 
