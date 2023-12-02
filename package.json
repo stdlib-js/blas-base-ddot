@@ -42,18 +42,25 @@
   },
   "dependencies": {
     "@stdlib/assert-is-error": "^0.1.1",
+    "@stdlib/napi-argv": "^0.1.1",
+    "@stdlib/napi-argv-int64": "^0.1.1",
+    "@stdlib/napi-argv-strided-float64array": "^0.1.1",
+    "@stdlib/napi-export": "^0.1.1",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.1",
     "@stdlib/utils-library-manifest": "^0.1.1",
     "@stdlib/utils-try-require": "^0.1.1"
   },
   "devDependencies": {
+    "@stdlib/array-filled-by": "^0.1.0",
     "@stdlib/array-float64": "^0.1.1",
     "@stdlib/assert-is-browser": "^0.1.1",
     "@stdlib/bench": "^0.2.1",
     "@stdlib/math-base-assert-is-nan": "^0.1.1",
     "@stdlib/math-base-special-pow": "^0.1.0",
-    "@stdlib/math-base-special-round": "^0.1.1",
-    "@stdlib/random-base-randu": "^0.1.0",
+    "@stdlib/random-base-discrete-uniform": "^0.1.0",
+    "@stdlib/random-base-uniform": "^0.1.0",
+    "@stdlib/strided-base-min-view-buffer-index": "^0.1.1",
+    "@stdlib/strided-base-offset-view": "^0.1.1",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
@@ -99,6 +106,9 @@
     "double",
     "float64array"
   ],
+  "__stdlib__": {
+    "wasm": false
+  },
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"
