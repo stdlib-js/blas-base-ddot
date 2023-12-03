@@ -51,14 +51,13 @@
     "@stdlib/utils-try-require": "^0.1.1"
   },
   "devDependencies": {
-    "@stdlib/array-filled-by": "^0.1.0",
     "@stdlib/array-float64": "^0.1.1",
     "@stdlib/assert-is-browser": "^0.1.1",
     "@stdlib/bench": "^0.2.1",
     "@stdlib/math-base-assert-is-nan": "^0.1.1",
     "@stdlib/math-base-special-pow": "^0.1.0",
-    "@stdlib/random-base-discrete-uniform": "^0.1.0",
-    "@stdlib/random-base-uniform": "^0.1.0",
+    "@stdlib/random-array-discrete-uniform": "^0.1.0",
+    "@stdlib/random-array-uniform": "^0.1.0",
     "@stdlib/strided-base-min-view-buffer-index": "^0.1.1",
     "@stdlib/strided-base-offset-view": "^0.1.1",
     "proxyquire": "^2.0.0",
