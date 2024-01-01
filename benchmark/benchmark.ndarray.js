@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var uniform = require( '@stdlib/random-array-uniform' );
 var isnan = require( '@stdlib/math-base-assert-is-nan' );
 var pow = require( '@stdlib/math-base-special-pow' );
