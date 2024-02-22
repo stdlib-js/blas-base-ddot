@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/blas-base-ddot",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Calculate the dot product of two double-precision floating-point vectors.",
   "license": "Apache-2.0",
   "author": {
@@ -41,29 +41,29 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-error": "^0.2.0",
-    "@stdlib/napi-argv": "^0.2.0",
-    "@stdlib/napi-argv-int64": "^0.2.0",
-    "@stdlib/napi-argv-strided-float64array": "^0.2.0",
-    "@stdlib/napi-export": "^0.2.0",
-    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.0",
-    "@stdlib/utils-library-manifest": "^0.2.0",
-    "@stdlib/utils-try-require": "^0.2.0"
+    "@stdlib/assert-is-error": "^0.2.1",
+    "@stdlib/napi-argv": "^0.2.1",
+    "@stdlib/napi-argv-int64": "^0.2.1",
+    "@stdlib/napi-argv-strided-float64array": "^0.2.1",
+    "@stdlib/napi-export": "^0.2.1",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1",
+    "@stdlib/utils-library-manifest": "^0.2.1",
+    "@stdlib/utils-try-require": "^0.2.1"
   },
   "devDependencies": {
-    "@stdlib/array-float64": "^0.1.1",
-    "@stdlib/assert-is-browser": "^0.1.1",
-    "@stdlib/math-base-assert-is-nan": "^0.1.1",
-    "@stdlib/math-base-special-pow": "^0.1.0",
-    "@stdlib/random-array-discrete-uniform": "^0.1.0",
-    "@stdlib/random-array-uniform": "^0.1.0",
-    "@stdlib/strided-base-min-view-buffer-index": "^0.2.0",
-    "@stdlib/strided-base-offset-view": "^0.2.0",
+    "@stdlib/array-float64": "^0.2.0",
+    "@stdlib/assert-is-browser": "^0.2.1",
+    "@stdlib/math-base-assert-is-nan": "^0.2.1",
+    "@stdlib/math-base-special-pow": "^0.2.0",
+    "@stdlib/random-array-discrete-uniform": "^0.2.0",
+    "@stdlib/random-array-uniform": "^0.2.0",
+    "@stdlib/strided-base-min-view-buffer-index": "^0.2.1",
+    "@stdlib/strided-base-offset-view": "^0.2.1",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.1.2"
+    "@stdlib/bench-harness": "^0.2.0"
   },
   "engines": {
     "node": ">=0.10.0",
