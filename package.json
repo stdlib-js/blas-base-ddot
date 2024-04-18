@@ -45,6 +45,7 @@
     "@stdlib/napi-argv": "^0.2.1",
     "@stdlib/napi-argv-int64": "^0.2.1",
     "@stdlib/napi-argv-strided-float64array": "^0.2.1",
+    "@stdlib/napi-create-double": "github:stdlib-js/napi-create-double#main",
     "@stdlib/napi-export": "^0.2.1",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1",
     "@stdlib/utils-library-manifest": "^0.2.1",
