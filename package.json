@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "@stdlib/assert-is-error": "^0.2.1",
+    "@stdlib/blas-base-shared": "github:stdlib-js/blas-base-shared#main",
     "@stdlib/napi-argv": "^0.2.1",
     "@stdlib/napi-argv-int64": "^0.2.1",
     "@stdlib/napi-argv-strided-float64array": "^0.2.1",
