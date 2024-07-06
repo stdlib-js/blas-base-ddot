@@ -1,9 +1,9 @@
-"use strict";var d=function(i,e){return function(){return e||i((e={exports:{}}).exports,e),e.exports}};var j=d(function(F,l){
-var m=5;function g(i,e,f,o,u){var v,s,t,a,r;if(v=0,i<=0)return v;if(f===1&&u===1){if(a=i%m,a>0)for(r=0;r<a;r++)v+=e[r]*o[r];if(i<m)return v;for(r=a;r<i;r+=m)v+=e[r]*o[r]+e[r+1]*o[r+1]+e[r+2]*o[r+2]+e[r+3]*o[r+3]+e[r+4]*o[r+4];return v}for(f<0?s=(1-i)*f:s=0,u<0?t=(1-i)*u:t=0,r=0;r<i;r++)v+=e[s]*o[t],s+=f,t+=u;return v}l.exports=g
-});var R=d(function(G,M){
-var q=5;function h(i,e,f,o,u,v,s){var t,a,r,c,n;if(t=0,i<=0)return t;if(a=o,r=s,f===1&&v===1){if(c=i%q,c>0)for(n=0;n<c;n++)t+=e[a]*u[r],a+=1,r+=1;if(i<q)return t;for(n=c;n<i;n+=q)t+=e[a]*u[r]+e[a+1]*u[r+1]+e[a+2]*u[r+2]+e[a+3]*u[r+3]+e[a+4]*u[r+4],a+=q,r+=q;return t}for(n=0;n<i;n++)t+=e[a]*u[r],a+=f,r+=v;return t}M.exports=h
-});var O=d(function(H,E){
-var k=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),_=j(),w=R();k(_,"ndarray",w);E.exports=_
-});var z=require("path").join,A=require('@stdlib/utils-try-require/dist'),B=require('@stdlib/assert-is-error/dist'),C=O(),p,b=A(z(__dirname,"./native.js"));B(b)?p=C:p=b;module.exports=p;
+"use strict";var c=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var p=c(function(D,j){
+var s=5;function b(e,r,n,q,t,o,f){var v,i,a,d,u;if(v=0,e<=0)return v;if(i=q,a=f,n===1&&o===1){if(d=e%s,d>0)for(u=0;u<d;u++)v+=r[i]*t[a],i+=1,a+=1;if(e<s)return v;for(u=d;u<e;u+=s)v+=r[i]*t[a]+r[i+1]*t[a+1]+r[i+2]*t[a+2]+r[i+3]*t[a+3]+r[i+4]*t[a+4],i+=s,a+=s;return v}for(u=0;u<e;u++)v+=r[i]*t[a],i+=n,a+=o;return v}j.exports=b
+});var _=c(function(F,R){
+var l=require('@stdlib/strided-base-stride2offset/dist'),g=p();function h(e,r,n,q,t){var o,f;return e<=0?0:(o=l(e,n),f=l(e,t),g(e,r,n,o,q,t,f))}R.exports=h
+});var M=c(function(G,E){
+var k=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),y=_(),w=p();k(y,"ndarray",w);E.exports=y
+});var x=require("path").join,z=require('@stdlib/utils-try-require/dist'),A=require('@stdlib/assert-is-error/dist'),B=M(),m,O=z(x(__dirname,"./native.js"));A(O)?m=B:m=O;module.exports=m;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
