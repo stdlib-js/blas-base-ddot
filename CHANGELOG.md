@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-07-06)
+## Unreleased (2024-07-14)
 
 <section class="features">
 
@@ -32,6 +32,7 @@
 
 <details>
 
+-   [`d04dcbd`](https://github.com/stdlib-js/stdlib/commit/d04dcbd6dc3b0bf4a89bd3947d317fa5ff15bb38) - **docs:** remove private annotations in C comments _(by Philipp Burckhardt)_
 -   [`271f5d5`](https://github.com/stdlib-js/stdlib/commit/271f5d5d3e530225bd82f34efebf5df9a944fdde) - **refactor:** reduce code duplication in `blas/base` level 1 routines [(#2517)](https://github.com/stdlib-js/stdlib/pull/2517) _(by Aman Bhansali)_
 -   [`6226f32`](https://github.com/stdlib-js/stdlib/commit/6226f32ba8be2b8d880353194c510e629760b53f) - **docs:** update signatures _(by Athan Reines)_
 -   [`9ff6e8e`](https://github.com/stdlib-js/stdlib/commit/9ff6e8e2a86e84d30f4bab902b55f43eb85e6b0d) - **refactor:** support building with API suffix _(by Athan Reines)_
