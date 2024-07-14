@@ -51,7 +51,8 @@
     "@stdlib/strided-base-stride2offset": "github:stdlib-js/strided-base-stride2offset#main",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.1",
     "@stdlib/utils-library-manifest": "^0.2.1",
-    "@stdlib/utils-try-require": "^0.2.1"
+    "@stdlib/utils-try-require": "^0.2.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.1"
   },
   "devDependencies": {
     "@stdlib/array-float64": "^0.2.1",
