@@ -51,7 +51,8 @@
     "@stdlib/strided-base-stride2offset": "^0.1.0",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
     "@stdlib/utils-library-manifest": "^0.2.2",
-    "@stdlib/utils-try-require": "^0.2.2"
+    "@stdlib/utils-try-require": "^0.2.2",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/array-float64": "^0.2.2",
