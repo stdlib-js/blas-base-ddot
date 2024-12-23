@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-01)
+## Unreleased (2024-12-23)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`62364f6`](https://github.com/stdlib-js/stdlib/commit/62364f62ea823a3b52c2ad25660ecd80c71f8f36) - **style:** fix C comment alignment _(by Philipp Burckhardt)_
 -   [`e4f28df`](https://github.com/stdlib-js/stdlib/commit/e4f28df214f15513bdafeb5a6bbc3bde115dc63b) - **feat:** add C `ndarray` implementation for `blas/base/ddot` [(#2936)](https://github.com/stdlib-js/stdlib/pull/2936) _(by Aman Bhansali)_
 -   [`2777e4b`](https://github.com/stdlib-js/stdlib/commit/2777e4be161869d09406e3b17947d24c64b47af2) - **bench:** resolve lint errors in benchmarks _(by Athan Reines)_
 
@@ -35,10 +36,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Aman Bhansali
 -   Athan Reines
+-   Philipp Burckhardt
 
 </section>
 
