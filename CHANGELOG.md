@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-25)
+## Unreleased (2025-07-22)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`11f3cfa`](https://github.com/stdlib-js/stdlib/commit/11f3cfa5a658d7cb105aeb2578b7d72ea62f1e97) - **refactor:** update include header guards for double precision real packages [(#7711)](https://github.com/stdlib-js/stdlib/pull/7711) _(by Shabareesh Shetty)_
 -   [`7c9afed`](https://github.com/stdlib-js/stdlib/commit/7c9afed6a288c9e7d3048dfa0ac8f085759d73f4) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`09c9ceb`](https://github.com/stdlib-js/stdlib/commit/09c9ceb58c6dd23c10f1980094851983c57d693f) - **chore:** fix formatting _(by Athan Reines)_
 -   [`51bf6f9`](https://github.com/stdlib-js/stdlib/commit/51bf6f9d2bb027aacecda87e02f957badbc246b0) - **bench:** fix formatting _(by Athan Reines)_
@@ -39,11 +40,12 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Aman Bhansali
 -   Athan Reines
 -   Philipp Burckhardt
+-   Shabareesh Shetty
 
 </section>
 
