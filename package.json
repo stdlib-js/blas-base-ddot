@@ -41,7 +41,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-error": "^0.2.2",
+    "@stdlib/assert-is-error": "^0.2.3",
     "@stdlib/blas-base-shared": "^0.2.1",
     "@stdlib/napi-argv": "^0.2.3",
     "@stdlib/napi-argv-int64": "^0.2.3",
@@ -51,21 +51,22 @@
     "@stdlib/strided-base-min-view-buffer-index": "^0.3.1",
     "@stdlib/strided-base-stride2offset": "^0.1.1",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.3",
-    "@stdlib/utils-library-manifest": "^0.2.3",
-    "@stdlib/utils-try-require": "^0.2.2"
+    "@stdlib/utils-library-manifest": "^0.2.4",
+    "@stdlib/utils-try-require": "^0.2.3"
   },
   "devDependencies": {
-    "@stdlib/array-float64": "^0.2.2",
-    "@stdlib/assert-is-browser": "^0.2.2",
+    "@stdlib/array-float64": "^0.2.3",
+    "@stdlib/assert-is-browser": "^0.2.3",
     "@stdlib/math-base-assert-is-nan": "^0.2.3",
-    "@stdlib/math-base-special-pow": "^0.3.0",
-    "@stdlib/random-array-discrete-uniform": "^0.2.1",
-    "@stdlib/random-array-uniform": "^0.2.1",
+    "@stdlib/math-base-special-pow": "^0.3.1",
+    "@stdlib/random-array-discrete-uniform": "^0.2.2",
+    "@stdlib/random-array-uniform": "^0.2.2",
+    "@stdlib/string-format": "^0.2.3",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.2"
+    "@stdlib/bench-harness": "^0.2.3"
   },
   "engines": {
     "node": ">=0.10.0",
